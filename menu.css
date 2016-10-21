@@ -4,6 +4,8 @@ Update ALL the named colours to create a monochromatic scheme
 Style the menus - one horizontally and one vertically
 Add the hover/active effects to your menu items
 ***************************************************/
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
 *{
     padding: 0;
     margin: 0;
@@ -13,21 +15,21 @@ html{
     font-size: 16px;
     line-height: 1.6;
     /* ADD the Google sans-serif font to this font stack */
-    font-family: helvetica, arial, sans-serif;
+    font-family: 'Droid Sans', helvetica, arial, sans-serif;
 }
 html, body{
-    background-color: salmon;
+    background-color: #BF6D3B;
 }
 h1{
     font-size: 6.854rem;
     /* ADD the Google serif font to this font stack */
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
+    font-family: 'Droid Serif' ,'Palatino Linotype', 'Book Antiqua', Palatino, serif; 
     padding: 1rem 2rem;
 }
 h2{
     font-size: 4.23rem;
     /* ADD the Google serif font to this font stack */
-    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-family: 'Droid Serif' ,'Palatino Linotype', 'Book Antiqua', Palatino, serif;
     padding: 1rem 2rem;
 }
 nav li{
@@ -41,54 +43,76 @@ p{
     max-width: 1400px; 
     width: 80%;
     margin: 0 auto;
-    background-color: chartreuse;
-    color: rebeccapurple;
+    background-color: #F2BFA0;
+    color: #301200;
 }
 header{
-    border-bottom: 0.8rem solid khaki;
-    background-color: cornflowerblue;
-    color: aliceblue;
+    border-bottom: 0.8rem solid #A63E00;
+    background-color: #301200;
+    color: #F05A00;
 }
 .menu-h{
     width: 100%;
+    clear: left;
 }
     .menu-h li{
         /* style the list items to remove the bullets 
         and line up horizontally
         and take up 20% of the width of the ul */
+        list-style-type: none;
+        float: left;
+        width: calc(20% - 0.5rem);
+        text-align: center;
+        padding: 0;
     }
         .menu-h a,
         .menu-h a:link,
         .menu-h a:visited{
             /* style the anchors to fill the entire width of the li 
             make sure there is padding around your text */
+            padding: 0 20%;
+            color: #A63E00;
         }
         .menu-h a:hover,
         .menu-h a:active{
-            
+            background-color: #301200;
+            color: #F05A00;
         }
 .menu-v{
+
     width: 20%;
-    float:left;
+    float: left;
+    padding: 3rem 0 0 0;
+
 }
     .menu-v li{
         /* style the list items to remove the bullets 
         and line up vertically
         and take up 100% of the width of the ul */
+        list-style-type: none;
+        text-align: center;
+        padding: 1rem 0;        
     }
         .menu-v a,
         .menu-v a:link,
         .menu-v a:visited{
             /* style the anchors to fill the entire width of the li */
-        }
-        .menu-v a:hover,
-        .menu-v a:active{
+            padding: 0 20%;
+            color: #A63E00;
             
         }
-main{
-    width:80%;
+        .menu-v a:hover,
+        .menu-v a:active{ 
+            background-color: #301200; 
+            color: #F2BFA0;          
+        }
+main {
+    padding-top: 2rem;
+    width: calc(80% - 0.5rem);
+    clear:right;
     float: right;
 }
 footer{
     clear:both;
+    color: #301200;
 }
